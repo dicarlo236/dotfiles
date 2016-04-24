@@ -5,8 +5,8 @@
 
 " ********KEY MAPPING**********"
 " requires makefile to have a run target - see example makefile
-nmap <F9> :make run
-nmap <F7> :make
+nmap <F9> :!make run<ENTER>
+nmap <F7> :make<ENTER>
 imap jk <Esc>
 map <C-n> :NERDTreeToggle<CR>
 "a c++ single file compile/run shortcut
