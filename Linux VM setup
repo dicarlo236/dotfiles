@@ -2,3 +2,22 @@ Download Ubuntu MATE 14.04.2 (trusty) 64 bit iso
 Download and install VMWare Workstation 12 Pro (from MIT)
 New VM, Custom, ISO (ubuntu mate iso), Linux Ubuntu, 4 GB RAM, NAT, other default settings
 Make sure intel vx-d is enabled in bios!
+run 'sudo apt-get install open-vm-tools build-essential gcc'
+Install vmware tools
+reboot
+sudo apt-get install git vim exuberant-ctags clang-3.4
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+git clone https://github.com/dicarlo236/dotfiles.git
+cp dotfiles/.vimrc .
+git clone https://github.com/powerline/fonts.git
+cd fonts
+./install.sh
+change your terminal settings to use a powerline font (I like ubuntu mono derivative powerline)
+change ~/.vimrc and remove the two lines color jellybeans and colors jellybeans
+put the line 'color jellybeans' at the end of .vimrc
+run 'export TERM='xterm-256color'   This needs to be run each time a terminal is started.
+vim
+:PluginInstall
+
+
+
