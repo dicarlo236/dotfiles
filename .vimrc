@@ -21,8 +21,6 @@ noremap <expr> <M-,> pumvisible() ? '<C-n>' :
   \ '<C-x><C-o><C-n><C-p><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
 syntax enable
 set background=dark
-color jellybeans
-colors jellybeans
 set timeoutlen=200
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
@@ -86,6 +84,14 @@ Plugin 'scrooloose/syntastic'
 Plugin 'nanotech/jellybeans.vim'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'mhinz/vim-startify'
+Plugin 'easymotion/vim-easymotion'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
+color jellybeans
+map <Leader> <Plug>(easymotion-prefix)
+let g:EasyMotion_do_mappying = 0
+nmap s <Plug>(easymotion-overwin-f)
+let g:EasyMotion_smartcase = 1
+map <Leader>j <Plug>(easymotion-j)
+map <Leader>k <Plug>(easymotion-k)
