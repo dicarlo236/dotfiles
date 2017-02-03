@@ -90,7 +90,7 @@ call vundle#end()            " required
 filetype plugin indent on    " required
 color jellybeans
 map <Leader> <Plug>(easymotion-prefix)
-let g:EasyMotion_do_mappying = 0
+let g:EasyMotion_do_mapping = 0
 nmap s <Plug>(easymotion-overwin-f)
 let g:EasyMotion_smartcase = 1
 map <Leader>j <Plug>(easymotion-j)
