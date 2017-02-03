@@ -95,3 +95,6 @@ nmap s <Plug>(easymotion-overwin-f)
 let g:EasyMotion_smartcase = 1
 map <Leader>j <Plug>(easymotion-j)
 map <Leader>k <Plug>(easymotion-k)
+set tabstop=4
+set shiftwidth=4
+set expandtab
