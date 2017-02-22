@@ -85,6 +85,7 @@ Plugin 'nanotech/jellybeans.vim'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'mhinz/vim-startify'
 Plugin 'easymotion/vim-easymotion'
+Plugin 'tomasr/molokai'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -95,6 +96,9 @@ nmap s <Plug>(easymotion-overwin-f)
 let g:EasyMotion_smartcase = 1
 map <Leader>j <Plug>(easymotion-j)
 map <Leader>k <Plug>(easymotion-k)
+let g:rehash256 = 1
+let g:molokai_original = 1
+color molokai
 set tabstop=4
 set shiftwidth=4
 set expandtab
