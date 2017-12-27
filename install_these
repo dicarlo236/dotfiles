@@ -1,1 +1,8 @@
-gcc vim git build-essential cmake clang exuberant-ctags clang-3.4 audacity gimp vlc chromium-browser deluge wine gparted handbrake octave octave-control openssh-server
+gcc vim htop sl git build-essential cmake clang exuberant-ctags clang-3.4 audacity gimp vlc chromium-browser deluge wine gparted handbrake octave octave-control openssh-server
+
+sudo add-apt-repository ppa:embrosyn/cinnamon
+
+
+ffmpeg
+meld
+kdenlive
